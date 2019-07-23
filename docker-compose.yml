@@ -34,7 +34,7 @@ services:
        # When first run, this image populates /var/www/html/ with a Wordpress install,
        # and we want that to be exported so we have a copy of our code.
        #
-       - ./wordpress:/var/www/html
+       - ./html:/var/www/html
      environment:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_USER: appletreesg
