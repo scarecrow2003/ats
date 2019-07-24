@@ -77,7 +77,7 @@ services:
      volumes:
        - ./ssl_certs:/var/lib/https-portal
      environment:
-       DOMAINS: 'www.appletreesg.com -> http://web:80'
+       DOMAINS: 'www.appletreesg.com -> http://web:80 #production'
        DOMAINS: 'appletreesg.com => https://www.appletreesg.com'
        #DOMAINS: 'YOUR_FQDN -> http://web:80 #staging' # Uncomment when you want to test a staging cert.
        #DOMAINS: 'YOUR_FQDN -> http://web:80 #production' # Uncomment when you are ready for production.
